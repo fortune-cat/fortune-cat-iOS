@@ -24,6 +24,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="income:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkJ-gU-4yr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9r-lm-Yxk">
                                 <rect key="frame" x="515" y="520" width="60" height="60"/>
@@ -33,8 +36,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="expense:" destination="BYZ-38-t0r" eventType="touchUpInside" id="png-g1-H2d"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-¥ 135153" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrR-bz-Nan">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-¥ 135153" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrR-bz-Nan" customClass="MoneyLabel" customModule="FortuneCat" customModuleProvider="target">
                                 <rect key="frame" x="215" y="70" width="170" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="9sq-Po-kcq"/>
@@ -64,6 +70,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S9r-lm-Yxk" secondAttribute="bottom" constant="20" id="t3p-Hm-4DD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moneyLabel" destination="wrR-bz-Nan" id="hia-KP-veD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var moneyLabel: MoneyLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +21,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func income(sender: UIButton) {
+        moneyLabel.money += Int(rand() % 10000)
+    }
+    @IBAction func expense(sender: UIButton) {
+        moneyLabel.money -= Int(rand() % 10000)
+    }
+    
 }
 

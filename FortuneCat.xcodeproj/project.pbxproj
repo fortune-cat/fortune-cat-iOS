@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E7DD8441BA8798900DC86E7 /* MoneyLabelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7DD8431BA8798900DC86E7 /* MoneyLabelTest.swift */; settings = {ASSET_TAGS = (); }; };
 		1EBAC4001BA8716F00C906E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC3FF1BA8716F00C906E3 /* AppDelegate.swift */; };
 		1EBAC4021BA8716F00C906E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC4011BA8716F00C906E3 /* ViewController.swift */; };
 		1EBAC4051BA8716F00C906E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBAC4031BA8716F00C906E3 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E7DD8431BA8798900DC86E7 /* MoneyLabelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyLabelTest.swift; sourceTree = "<group>"; };
 		1EBAC3FC1BA8716F00C906E3 /* FortuneCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBAC3FF1BA8716F00C906E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EBAC4011BA8716F00C906E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				1EBAC4141BA8717000C906E3 /* FortuneCatTests.swift */,
+				1E7DD8431BA8798900DC86E7 /* MoneyLabelTest.swift */,
 				1EBAC4161BA8717000C906E3 /* Info.plist */,
 			);
 			path = FortuneCatTests;
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EBAC4151BA8717000C906E3 /* FortuneCatTests.swift in Sources */,
+				1E7DD8441BA8798900DC86E7 /* MoneyLabelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +507,7 @@
 				1EBAC4261BA8717000C906E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EBAC4271BA8717000C906E3 /* Build configuration list for PBXNativeTarget "FortuneCatTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				1EBAC4291BA8717000C906E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EBAC42A1BA8717000C906E3 /* Build configuration list for PBXNativeTarget "FortuneCatUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				1EBAC42C1BA8717000C906E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
