@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     let negativeColor = UIColor(red: 255/255, green: 135/255, blue: 23/255, alpha: 1)
     let positiveColor = UIColor(red: 88/255, green: 158/255, blue: 255/255, alpha: 1)
     
+    @IBOutlet weak var graphCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -48,3 +49,24 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UICollectionViewDelegate {
+    
+}
+
+extension ViewController: UICollectionViewDataSource {
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        var cell: GraphCollectionViewCell?
+        if indexPath.row % 2 == 0 {
+            cell = collectionView.dequeueReusableCellWithReuseIdentifier("negativeGraph", forIndexPath: indexPath) as? GraphCollectionViewCell
+            cell?.positive = false
+        } else {
+            cell = collectionView.dequeueReusableCellWithReuseIdentifier("positiveGraph", forIndexPath: indexPath) as? GraphCollectionViewCell
+            cell?.positive = true
+        }
+        cell?.stackNum(indexPath.row/2)
+        return cell!
+    }
+}

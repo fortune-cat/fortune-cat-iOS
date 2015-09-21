@@ -16,6 +16,7 @@
 		1EBAC4151BA8717000C906E3 /* FortuneCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC4141BA8717000C906E3 /* FortuneCatTests.swift */; };
 		1EBAC4201BA8717000C906E3 /* FortuneCatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC41F1BA8717000C906E3 /* FortuneCatUITests.swift */; };
 		1EBAC4311BA8742800C906E3 /* MoneyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC4301BA8742800C906E3 /* MoneyLabel.swift */; settings = {ASSET_TAGS = (); }; };
+		1EEE72B51BB058F600C9F730 /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72B41BB058F600C9F730 /* GraphCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1EBAC41F1BA8717000C906E3 /* FortuneCatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCatUITests.swift; sourceTree = "<group>"; };
 		1EBAC4211BA8717000C906E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EBAC4301BA8742800C906E3 /* MoneyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyLabel.swift; sourceTree = "<group>"; };
+		1EEE72B41BB058F600C9F730 /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		1EBAC42E1BA8741100C906E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1EEE72B61BB0590500C9F730 /* CollectionViewCells */,
 				1EBAC42F1BA8741100C906E3 /* Labels */,
 			);
 			path = Views;
@@ -145,6 +148,14 @@
 				1EBAC4301BA8742800C906E3 /* MoneyLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		1EEE72B61BB0590500C9F730 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE72B41BB058F600C9F730 /* GraphCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EBAC4021BA8716F00C906E3 /* ViewController.swift in Sources */,
+				1EEE72B51BB058F600C9F730 /* GraphCollectionViewCell.swift in Sources */,
 				1EBAC4311BA8742800C906E3 /* MoneyLabel.swift in Sources */,
 				1EBAC4001BA8716F00C906E3 /* AppDelegate.swift in Sources */,
 			);
