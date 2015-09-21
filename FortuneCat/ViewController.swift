@@ -12,9 +12,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var moneyLabel: MoneyLabel!
     
-    let negativeColor = UIColor(red: 255/255, green: 135/255, blue: 23/255, alpha: 1)
-    let positiveColor = UIColor(red: 88/255, green: 158/255, blue: 255/255, alpha: 1)
-    
     @IBOutlet weak var graphCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +37,9 @@ class ViewController: UIViewController {
         UIView.animateWithDuration(0.5, animations: {
             [unowned self] in
             if money >= 0 {
-                self.view.backgroundColor = self.positiveColor
+                self.view.backgroundColor = UIColor.positiveColor()
             } else {
-                self.view.backgroundColor = self.negativeColor
+                self.view.backgroundColor = UIColor.negativeColor()
             }
         })
     }

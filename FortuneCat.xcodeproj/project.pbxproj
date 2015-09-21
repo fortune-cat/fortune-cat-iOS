@@ -17,6 +17,9 @@
 		1EBAC4201BA8717000C906E3 /* FortuneCatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC41F1BA8717000C906E3 /* FortuneCatUITests.swift */; };
 		1EBAC4311BA8742800C906E3 /* MoneyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC4301BA8742800C906E3 /* MoneyLabel.swift */; settings = {ASSET_TAGS = (); }; };
 		1EEE72B51BB058F600C9F730 /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72B41BB058F600C9F730 /* GraphCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		1EEE72BC1BB060B600C9F730 /* CategorySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72BB1BB060B600C9F730 /* CategorySelectViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1EEE72BE1BB060D700C9F730 /* CategorySelectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE72BD1BB060D700C9F730 /* CategorySelectViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		1EEE72C11BB0638B00C9F730 /* UIColor+FortuneCatColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72C01BB0638B00C9F730 /* UIColor+FortuneCatColor.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		1EBAC4211BA8717000C906E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EBAC4301BA8742800C906E3 /* MoneyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyLabel.swift; sourceTree = "<group>"; };
 		1EEE72B41BB058F600C9F730 /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
+		1EEE72BB1BB060B600C9F730 /* CategorySelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySelectViewController.swift; sourceTree = "<group>"; };
+		1EEE72BD1BB060D700C9F730 /* CategorySelectViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CategorySelectViewController.storyboard; sourceTree = "<group>"; };
+		1EEE72C01BB0638B00C9F730 /* UIColor+FortuneCatColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FortuneCatColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 		1EBAC3FE1BA8716F00C906E3 /* FortuneCat */ = {
 			isa = PBXGroup;
 			children = (
+				1EEE72BF1BB0637B00C9F730 /* Extensions */,
+				1EEE72BA1BB0608800C9F730 /* Storyboards */,
+				1EEE72B91BB0606500C9F730 /* ViewControllers */,
 				1EBAC42E1BA8741100C906E3 /* Views */,
 				1EBAC3FF1BA8716F00C906E3 /* AppDelegate.swift */,
 				1EBAC4011BA8716F00C906E3 /* ViewController.swift */,
@@ -156,6 +165,31 @@
 				1EEE72B41BB058F600C9F730 /* GraphCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		1EEE72B91BB0606500C9F730 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE72BB1BB060B600C9F730 /* CategorySelectViewController.swift */,
+			);
+			name = ViewControllers;
+			path = Views/CollectionViewCells/ViewControllers;
+			sourceTree = "<group>";
+		};
+		1EEE72BA1BB0608800C9F730 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE72BD1BB060D700C9F730 /* CategorySelectViewController.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1EEE72BF1BB0637B00C9F730 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE72C01BB0638B00C9F730 /* UIColor+FortuneCatColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +298,7 @@
 				1EBAC40A1BA8716F00C906E3 /* LaunchScreen.storyboard in Resources */,
 				1EBAC4071BA8716F00C906E3 /* Assets.xcassets in Resources */,
 				1EBAC4051BA8716F00C906E3 /* Main.storyboard in Resources */,
+				1EEE72BE1BB060D700C9F730 /* CategorySelectViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +327,8 @@
 				1EEE72B51BB058F600C9F730 /* GraphCollectionViewCell.swift in Sources */,
 				1EBAC4311BA8742800C906E3 /* MoneyLabel.swift in Sources */,
 				1EBAC4001BA8716F00C906E3 /* AppDelegate.swift in Sources */,
+				1EEE72C11BB0638B00C9F730 /* UIColor+FortuneCatColor.swift in Sources */,
+				1EEE72BC1BB060B600C9F730 /* CategorySelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
