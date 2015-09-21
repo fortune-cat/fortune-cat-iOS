@@ -9,7 +9,7 @@
 import UIKit
 
 class MoneyLabel: UILabel {
-    var money: Int = rand() % 10000 - 5000 {
+    var money: Int = 0 {
         didSet {
             showMoneyWithAnimation()
         }
