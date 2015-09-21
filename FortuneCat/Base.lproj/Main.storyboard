@@ -27,6 +27,7 @@
                                 <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="income:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkJ-gU-4yr"/>
+                                    <segue destination="aZq-QW-oJH" kind="show" id="a5t-hj-Usg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9r-lm-Yxk">
@@ -39,6 +40,7 @@
                                 <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="expense:" destination="BYZ-38-t0r" eventType="touchUpInside" id="png-g1-H2d"/>
+                                    <segue destination="aZq-QW-oJH" kind="show" id="7y7-4i-veA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-¥ 135153" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrR-bz-Nan" customClass="MoneyLabel" customModule="FortuneCat" customModuleProvider="target">
@@ -214,8 +216,19 @@
             </objects>
             <point key="canvasLocation" x="305" y="364"/>
         </scene>
+        <!--CategorySelectViewController-->
+        <scene sceneID="zXp-br-i8P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CategorySelectViewController" id="aZq-QW-oJH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YYX-lA-DLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="370"/>
+        </scene>
     </scenes>
     <resources>
         <image name="moneykin" width="1000" height="700"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="a5t-hj-Usg"/>
+    </inferredMetricsTieBreakers>
 </document>

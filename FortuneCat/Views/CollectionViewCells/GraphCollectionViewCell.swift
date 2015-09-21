@@ -32,6 +32,4 @@ class GraphCollectionViewCell: UICollectionViewCell {
             stackableViews[i].hidden = false
         }
     }
-    
-    
 }

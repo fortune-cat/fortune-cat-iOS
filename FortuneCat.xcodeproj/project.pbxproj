@@ -20,6 +20,8 @@
 		1EEE72BC1BB060B600C9F730 /* CategorySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72BB1BB060B600C9F730 /* CategorySelectViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1EEE72BE1BB060D700C9F730 /* CategorySelectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE72BD1BB060D700C9F730 /* CategorySelectViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
 		1EEE72C11BB0638B00C9F730 /* UIColor+FortuneCatColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72C01BB0638B00C9F730 /* UIColor+FortuneCatColor.swift */; settings = {ASSET_TAGS = (); }; };
+		1EEE72C41BB0652E00C9F730 /* MoneyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72C31BB0652E00C9F730 /* MoneyManager.swift */; settings = {ASSET_TAGS = (); }; };
+		1EEE72C61BB0660C00C9F730 /* InputTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72C51BB0660C00C9F730 /* InputTransactionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		1EEE72BB1BB060B600C9F730 /* CategorySelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySelectViewController.swift; sourceTree = "<group>"; };
 		1EEE72BD1BB060D700C9F730 /* CategorySelectViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CategorySelectViewController.storyboard; sourceTree = "<group>"; };
 		1EEE72C01BB0638B00C9F730 /* UIColor+FortuneCatColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FortuneCatColor.swift"; sourceTree = "<group>"; };
+		1EEE72C31BB0652E00C9F730 /* MoneyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyManager.swift; sourceTree = "<group>"; };
+		1EEE72C51BB0660C00C9F730 /* InputTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTransactionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		1EBAC3FE1BA8716F00C906E3 /* FortuneCat */ = {
 			isa = PBXGroup;
 			children = (
+				1EEE72C21BB0651F00C9F730 /* Managers */,
 				1EEE72BF1BB0637B00C9F730 /* Extensions */,
 				1EEE72BA1BB0608800C9F730 /* Storyboards */,
 				1EEE72B91BB0606500C9F730 /* ViewControllers */,
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				1EEE72BB1BB060B600C9F730 /* CategorySelectViewController.swift */,
+				1EEE72C51BB0660C00C9F730 /* InputTransactionViewController.swift */,
 			);
 			name = ViewControllers;
 			path = Views/CollectionViewCells/ViewControllers;
@@ -190,6 +196,14 @@
 				1EEE72C01BB0638B00C9F730 /* UIColor+FortuneCatColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1EEE72C21BB0651F00C9F730 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE72C31BB0652E00C9F730 /* MoneyManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +340,8 @@
 				1EBAC4021BA8716F00C906E3 /* ViewController.swift in Sources */,
 				1EEE72B51BB058F600C9F730 /* GraphCollectionViewCell.swift in Sources */,
 				1EBAC4311BA8742800C906E3 /* MoneyLabel.swift in Sources */,
+				1EEE72C41BB0652E00C9F730 /* MoneyManager.swift in Sources */,
+				1EEE72C61BB0660C00C9F730 /* InputTransactionViewController.swift in Sources */,
 				1EBAC4001BA8716F00C906E3 /* AppDelegate.swift in Sources */,
 				1EEE72C11BB0638B00C9F730 /* UIColor+FortuneCatColor.swift in Sources */,
 				1EEE72BC1BB060B600C9F730 /* CategorySelectViewController.swift in Sources */,
