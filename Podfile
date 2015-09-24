@@ -2,7 +2,8 @@
 # platform :ios, '6.0'
 
 target 'FortuneCat' do
-
+  pod 'Fabric'
+  pod 'Crashlytics'
 end
 
 target 'FortuneCatTests' do
