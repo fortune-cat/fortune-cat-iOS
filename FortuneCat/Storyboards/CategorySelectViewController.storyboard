@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GxU-qD-tXq">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -65,7 +66,13 @@
                             <constraint firstItem="5J4-8h-ymP" firstAttribute="leading" secondItem="fFv-C3-YUP" secondAttribute="leading" id="wnC-JY-o0G"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Input" id="aZW-U3-w81"/>
+                    <navigationItem key="navigationItem" title="Input" id="aZW-U3-w81">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mCt-XZ-yWl">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="hcY-Eb-roS" id="0CP-7X-XCb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwv-MV-Odh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

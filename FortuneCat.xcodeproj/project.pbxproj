@@ -122,9 +122,9 @@
 			children = (
 				1EEE72C21BB0651F00C9F730 /* Managers */,
 				1EEE72BF1BB0637B00C9F730 /* Extensions */,
+				1EBAC42E1BA8741100C906E3 /* Views */,
 				1EEE72BA1BB0608800C9F730 /* Storyboards */,
 				1EEE72B91BB0606500C9F730 /* ViewControllers */,
-				1EBAC42E1BA8741100C906E3 /* Views */,
 				1EBAC3FF1BA8716F00C906E3 /* AppDelegate.swift */,
 				1EBAC4011BA8716F00C906E3 /* ViewController.swift */,
 				1EBAC4031BA8716F00C906E3 /* Main.storyboard */,

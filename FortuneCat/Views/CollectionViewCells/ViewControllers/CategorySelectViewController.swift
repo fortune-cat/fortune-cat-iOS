@@ -26,6 +26,9 @@ class CategorySelectViewController: UIViewController {
     }
     
 
+    @IBAction func cancelButtonTapped(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
