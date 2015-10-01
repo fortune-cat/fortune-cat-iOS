@@ -16,6 +16,7 @@
 		1EBAC4151BA8717000C906E3 /* FortuneCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC4141BA8717000C906E3 /* FortuneCatTests.swift */; };
 		1EBAC4201BA8717000C906E3 /* FortuneCatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC41F1BA8717000C906E3 /* FortuneCatUITests.swift */; };
 		1EBAC4311BA8742800C906E3 /* MoneyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAC4301BA8742800C906E3 /* MoneyLabel.swift */; settings = {ASSET_TAGS = (); }; };
+		1EE969C91BBC0FDB00568793 /* TalkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE969C81BBC0FDB00568793 /* TalkLabel.swift */; settings = {ASSET_TAGS = (); }; };
 		1EEE72B51BB058F600C9F730 /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72B41BB058F600C9F730 /* GraphCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		1EEE72BC1BB060B600C9F730 /* CategorySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE72BB1BB060B600C9F730 /* CategorySelectViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1EEE72BE1BB060D700C9F730 /* CategorySelectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE72BD1BB060D700C9F730 /* CategorySelectViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -58,6 +59,7 @@
 		1EBAC41F1BA8717000C906E3 /* FortuneCatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCatUITests.swift; sourceTree = "<group>"; };
 		1EBAC4211BA8717000C906E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EBAC4301BA8742800C906E3 /* MoneyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyLabel.swift; sourceTree = "<group>"; };
+		1EE969C81BBC0FDB00568793 /* TalkLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkLabel.swift; sourceTree = "<group>"; };
 		1EEE72B41BB058F600C9F730 /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
 		1EEE72BB1BB060B600C9F730 /* CategorySelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySelectViewController.swift; sourceTree = "<group>"; };
 		1EEE72BD1BB060D700C9F730 /* CategorySelectViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CategorySelectViewController.storyboard; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				1EBAC4301BA8742800C906E3 /* MoneyLabel.swift */,
+				1EE969C81BBC0FDB00568793 /* TalkLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				TargetAttributes = {
 					1EBAC3FB1BA8716F00C906E3 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HSPXR438P9;
 					};
 					1EBAC40F1BA8717000C906E3 = {
 						CreatedOnToolsVersion = 7.0;
@@ -413,6 +417,7 @@
 				1EBAC4021BA8716F00C906E3 /* ViewController.swift in Sources */,
 				1EEE72B51BB058F600C9F730 /* GraphCollectionViewCell.swift in Sources */,
 				1EBAC4311BA8742800C906E3 /* MoneyLabel.swift in Sources */,
+				1EE969C91BBC0FDB00568793 /* TalkLabel.swift in Sources */,
 				1EEE72C41BB0652E00C9F730 /* MoneyManager.swift in Sources */,
 				1EEE72C61BB0660C00C9F730 /* InputTransactionViewController.swift in Sources */,
 				1EBAC4001BA8716F00C906E3 /* AppDelegate.swift in Sources */,
@@ -561,10 +566,13 @@
 			baseConfigurationReference = 658A3BA48DF2567BE27B214D /* Pods-FortuneCat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FortuneCat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.fortune-cat.FortuneCat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -573,10 +581,13 @@
 			baseConfigurationReference = FAD6473F87B0D9D5669CD55E /* Pods-FortuneCat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FortuneCat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "info.fortune-cat.FortuneCat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
