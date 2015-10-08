@@ -11,26 +11,37 @@ import Crashlytics
 
 class ViewController: UIViewController {
 
+    enum SegueIdentifier: String {
+        case Income
+        case Expense
+    }
+    
     @IBOutlet weak var moneyLabel: MoneyLabel!
     
     @IBOutlet weak var graphCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        NSNotificationCenter.defaultCenter().addObserverForName(kMoneyAdded, object: nil, queue: nil, usingBlock: {
+            [unowned self] (notification: NSNotification) in
+            guard let money = notification.userInfo?["money"] as? Int else {
+                return
+            }
+            
+            self.moneyLabel.money += money
+            self.changeBackgroundColor(self.moneyLabel.money)
+            })
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     @IBAction func income(sender: UIButton) {
-        moneyLabel.money += Int(rand() % 10000)
-        changeBackgroundColor(moneyLabel.money)
     }
     @IBAction func expense(sender: UIButton) {
-        moneyLabel.money -= Int(rand() % 10000)
-        changeBackgroundColor(moneyLabel.money)
     }
     
     func changeBackgroundColor(money: Int) {
@@ -42,6 +53,23 @@ class ViewController: UIViewController {
                 self.view.backgroundColor = UIColor.negativeColor()
             }
         })
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guard let identifier = segue.identifier, segueIdentifier = SegueIdentifier(rawValue: identifier) else {
+            return
+        }
+        
+        let destinationNavigation = segue.destinationViewController as? UINavigationController
+        let destinationController = destinationNavigation?.viewControllers.first as? CategorySelectViewController
+        
+        switch segueIdentifier {
+        case .Income:
+            destinationController?.isIncome = true
+        case .Expense:
+            destinationController?.isIncome = false
+        }
+        
     }
 
 }

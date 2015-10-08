@@ -8,7 +8,10 @@
 
 import UIKit
 
+let kMoneyAdded = "MoneyAdded"
+
 class InputTransactionViewController: UIViewController {
+    var isIncome = true
 
     @IBOutlet weak var moneyInputField: UITextField! {
         didSet {
@@ -17,6 +20,7 @@ class InputTransactionViewController: UIViewController {
         }
     }
     @IBOutlet weak var noteInputField: UITextField!
+    var money: Int?
     
     
     override func viewDidLoad() {
@@ -43,7 +47,7 @@ class InputTransactionViewController: UIViewController {
                     moneyInputField.text = "¥0"
                 return
             }
-            
+            self.money = money
             let num = NSNumber(integer: money)
             let formatter = NSNumberFormatter()
             formatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
@@ -61,6 +65,20 @@ class InputTransactionViewController: UIViewController {
     @IBAction func done(sender: UIBarButtonItem) {
         self.view.endEditing(true)
         self.dismissViewControllerAnimated(true, completion: nil)
+        
+        guard let money = self.money else {
+            return
+        }
+        
+        if isIncome {
+            NSNotificationCenter.defaultCenter().postNotificationName(kMoneyAdded, object: self, userInfo: [
+                "money": money
+            ])
+        } else {
+            NSNotificationCenter.defaultCenter().postNotificationName(kMoneyAdded, object: self, userInfo: [
+                "money": -money
+            ])
+        }
     }
     /*
     // MARK: - Navigation
