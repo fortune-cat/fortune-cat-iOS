@@ -28,7 +28,7 @@
                                 <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="income:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkJ-gU-4yr"/>
-                                    <segue destination="aZq-QW-oJH" kind="show" id="a5t-hj-Usg"/>
+                                    <segue destination="aZq-QW-oJH" kind="show" identifier="Income" id="a5t-hj-Usg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9r-lm-Yxk">
@@ -41,7 +41,7 @@
                                 <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="expense:" destination="BYZ-38-t0r" eventType="touchUpInside" id="png-g1-H2d"/>
-                                    <segue destination="aZq-QW-oJH" kind="show" id="7y7-4i-veA"/>
+                                    <segue destination="aZq-QW-oJH" kind="show" identifier="Expense" id="7y7-4i-veA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-¥ 135153" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrR-bz-Nan" customClass="MoneyLabel" customModule="FortuneCat" customModuleProvider="target">
@@ -51,7 +51,7 @@
                                     <constraint firstAttribute="width" constant="170" id="UjY-Tp-jX9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moneykin" translatesAutoresizingMaskIntoConstraints="NO" id="SrV-VG-ooa">
@@ -104,7 +104,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cO-xd-AwD">
                                                     <rect key="frame" x="8" y="36" width="77" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnQ-Dw-4tf">
@@ -114,7 +114,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-¥1,052" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdT-vT-OIN">
                                                     <rect key="frame" x="4" y="15" width="77" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -160,7 +160,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rx5-ca-JrF">
                                                     <rect key="frame" x="4" y="65" width="77" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3h-BZ-3YO">
@@ -170,7 +170,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥1,052" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo0-Z8-ail">
                                                     <rect key="frame" x="4" y="85" width="77" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -204,7 +204,7 @@
 しゃべるマネー
 ニャー</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -241,13 +241,13 @@
                 <viewControllerPlaceholder storyboardName="CategorySelectViewController" id="aZq-QW-oJH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYX-lA-DLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839" y="370"/>
+            <point key="canvasLocation" x="870" y="364"/>
         </scene>
     </scenes>
     <resources>
         <image name="moneykin" width="1000" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a5t-hj-Usg"/>
+        <segue reference="7y7-4i-veA"/>
     </inferredMetricsTieBreakers>
 </document>
