@@ -76,4 +76,7 @@ Pods/
 
 Carthage/Build
 
+# Bundler
+vendor/
+.bundle
 
